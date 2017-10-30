@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ponto.sp</title>
+	<!-- LINKS CSS E JS -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/estilo.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+
+	<!-- ILUSTRA PONTO ONIBUS -->
+	<div id="banner1" class="telaCheia">
+
+		<!-- cabecalhoRodape -->
+		<header id="cabecalhoRodape">
+			<div class="container linha alinharVertical JustificarEspacoEntre">
+
+				<!-- LOGO -->
+				<div class="LogoSimplificado">
+					<p>np.sp</p>
+				</div>
+
+				<!-- BUSCA -->
+				<nav class="formGroup">
+					<ul class="alinharVertical linha">
+						<li>
+						<input id="ponto" type="text" title="preencha este campo com o nome do ponto de ônibus que você quer informação" required placeholder="sobre qual ponto você quer informação?">
+						</li>
+						<li><button class="botaoBusca"> <img src="imgs/setasdireita.svg"> </button></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="posicionamento">
+			<div class="txtIlustracao container linha">
+
+				<!--TEXTO -->
+				<div id="txt">
+					<h1>no<br>ponto.</h1>	
+				</div>
+				<!--ILUSTRACAO -->
+				<div class="ilustracao"> 
+					<img class="pontomulher visivel" src="imgs/pontocommulher.svg">
+					<img class="pontosem" src="imgs/pontosem.svg">
+				</div>
+
+				<img class="onibus" src="imgs/onibus.svg">
+			</div>
+
+				<!-- LINHAS RUA  -->
+				<div class="linhaRua">	
+				</div>
+
+				<div class="botaoDot">
+					<a href="#banner2"><img src="imgs/setasbaixo.png"></a>
+				</div>
+			</main>
+	</div>
+
+<!--  -->
+
+		<!-- SECTION 2 - TA PERIDO? -->
+		<section id="banner2" class="telaCheia">
+
+			<div class="posicionamento">
+				<div class="txtIlustracao container linha">
+
+					<!-- TEXTO  SLIDER-->
+
+					<!-- slider 1 - txt -->
+					<div class="sliderTextos visivel" data-show="1"> 
+						<div class="txt">
+							
+							<h2 class="verde">ta<br>perdido?</h2>
+							
+							<p> ponto.são paulo é uma plataforma colaborativa que quer melhorar a sinalização das paradas de ônibus e facilitar a consulta de linhas.
+							<br>
+							<br>
+							você pode participar e se beneficiar desta ferramente através do <a href="#banner3">site</a> e do <a href="#banner4">app</a>.</p>	
+
+						</div>
+					</div>
+
+					<!-- slider 2 - txt -->
+					<div class="sliderTextos" data-show="2"> 
+						<div class="txt">
+							
+							<h2 class="verde">ta<br>perdido?</h2>
+							
+							<p> você não está sozinhx! para dar ínico a este projeto, fizemos uma pesquisa por amostragem. Na pergunta "como você avalia a sinalização nos pontos de ônibus da capital paulista?" Nenhum dos entrevistados (isso mesmo, NENHUMzinho) disse que estava totalmente satisfeito com o serviço.
+							<br>
+							<br>Ainda da tempo de dar seu pitaco e fazer seu textão! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdq8VLFgfFaZBNszw4CWflr-QlsFILrYGShsizQSmzx5nrHg/viewform" target="_blank">responde aqui</a>?!</p>	
+						</div>
+					</div>
+
+					<!-- ILUSTRAÇAO SLIDER-->
+					<div class="ilustracao" id="sliderContainer"> 
+
+						<!-- slider 1 ilustra -->
+						<img src="imgs/placaverde.png" class="visivel placaVerde" data-show="1">
+
+						<!-- slider 2 ilustra -->
+						<img class="pizza" src="imgs/graficopizza.png" data-show="2">
+						<div class="sliderPerdido">
+
+							<div class="bolinha ativa" data-slide="1"></div>
+							<div class="bolinha" data-slide="2"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- LINHAS DE RUA  -->
+				<div class="linhaRua">
+				</div>
+				
+				<div class="botaoDot">
+					<a href="#banner3"><img src="imgs/setasbaixo.png"></a>
+				</div>
+	
+		</section>
+
+		<!-- SECTION 3 - IMPRIME -->
+		<section id="banner3" class="telaCheia">
+
+			<div class="justificaComMargem">
+				<div class="txtIlustracao container linha">
+
+					<!-- TEXTO -->
+					<div class="txt">
+						
+						<h2 class="amarelo">imprima<br>&#38; cole</h2>
+						
+						<p> no site, além de consultar quais linhas param em cada ponto,  você pode gerar uma lista e um QR code com essas informações. 
+						<br>
+						<br>
+						aí é so imprimir e colar na parada!  você facilitará sua vida, dinamizando o acesso no app, e a de quem tá perdido, melhorando a sinalização dos transportes da cidade.</p>	
+
+						<div class="botoesInfo amarelo">
+							<a href="info.html" target="_blank"><button>+info</button></a>
+							<a href="video.html" target="_blank"><button>video</button></a>
+						</div>
+					</div>
+
+					<!-- ILUSTRACAO -->
+					<div class="ilustracao"> 
+						<img class="papel" src="imgs/papelimpressora.svg">
+						<img class="impressora" src="imgs/impressora.svg">
+					</div>
+				</div>
+			</div>	
+			<a href="#banner4" class="setaCentro"><img src="imgs/setasbaixo.png"></a>
+		</section>
+
+
+		<!-- SECTION 4 - APP -->
+		<section id="banner4" class="telaCheia">
+
+			<div class="justificaComMargem">
+				<div class="txtIlustracao container linha">
+
+					<!-- TEXTO -->
+					<div class="txt">
+						
+						<h2 class="laranja">scaneie<br>&#38; filtre</h2>
+						
+						<p> com o applicativo <a href="index.html">noponto.sp</a> é só scanear o QRcode do projeto  e, em dois clicks, você terá seu trajeto, com filtros de periodicidade e tudo!
+						<br>
+						<br>
+						com design simples, mas certeiro. sem excesso de botões (aqueles que você nunca usa e nem sabe pra quê servem), com fonte grande, ideal  para quem está em movimento. ah, e também vai ter assistente de voz!</p>	
+
+						<div class="botoesInfo laranja">
+							<a href="infolaranja.html" target="_blank"><button>+info</button></a>
+							<a href="baixar.html" target="_blank"><button>baixar</button></a>
+						</div>
+					</div>
+
+					<!-- ILUSTRACAO -->
+					<div class="ilustracao"> 
+						<img class="telefone1" src="imgs/telefonetela1.svg">
+						<img class="telefone2" src="imgs/telefonetela2.svg">
+					</div>
+				</div>
+			</div>	
+			<a href="#banner5" class="setaCentro"><img src="imgs/setasbaixo.png"></a>
+		</section>
+
+
+		<!-- SECTION 5 - final -->
+		<div class="telaCheia"> 
+		<section id="banner5">
+			<div class="txtIlustracao container linha">
+
+				<!-- TEXTO -->
+				<div class="txt">
+						
+					<h4>-reclamação
+					<br>+ colaboração</h4>
+					<br>
+						
+					<p>você pode estar pensando: "mas pra quê outro app de localização?" nós temos pelo menos 3 bons motivos:
+					<br>
+						<div class="blocoCheck"> 
+
+							<div class="checkTxt linha alinharVertical">
+								<img src="imgs/check.png"> <p>se seu celular ficar sem bateria, você não precisa mais pedir informação na banca</p>
+							</div>
+
+							<div class="checkTxt linha alinharVertical">
+								<img src="imgs/check.png"><p>ajuda quem não conhece são paulo a se localizar sem gastar internet móvel. </p>
+							</div>
+
+							<div class="checkTxt linha alinharVertical">
+								<img src="imgs/check.png"> <p> é uma boa oportunidade de praticar o discurso. Se a prefeitura nao faz, nós fazemos!</p>
+							</div>
+						</div>
+				</div>
+
+				<!-- ILUSTRACAO -->
+				<div class="ilustracao"> 
+					<img class="ilustraRede" src="imgs/rede.png">
+				</div>
+			</div>
+			</section> 
+		
+				<!-- RODAPE -->
+				<footer id="cabecalhoRodape">
+					<div class="container linha alinharVertical JustificarEspacoEntre">
+
+						<!-- LOGO -->
+						<div class="LogoSimplificado">
+							<a href="index.html"><p>np.sp</p></a>
+						</div>
+
+
+						<!-- REDES SOCIAIS -->
+						<div class="redesSociais"> 
+							<ul>
+								<li> <img src="imgs/rd_insta.svg"> </li>
+								<li> <img src="imgs/rd_facebook.svg"> </li>
+								<li> <img src="imgs/rd_youtube.svg"> </li>
+								<li> <img src="imgs/rd_twitter.svg"> </li>
+								
+							</ul>
+						</div>
+
+						<!-- BUSCA -->
+						<nav class="formGroup">
+							<ul class="alinharVertical linha">
+								<li>
+								<input id="ponto" type="text" title="preencha este campo com o nome do ponto de ônibus que você quer informação" required placeholder="sobre qual ponto você quer informação?">
+								</li>
+								<li><button class="botaoBusca"> <img src="imgs/setasdireita.svg"> </button></li>
+							</ul>
+						</nav>
+					</div>
+			</footer>
+		</div>
+		
+
+<!-- scripts jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+
+<!-- SECTION INTEIRA -->
+<script type="text/javascript" src="scripts/jquery.scrollify.min.js"></script>
+<script>
+$(function() {
+  $.scrollify({
+    section : ".telaCheia",
+  });
+});
+</script>
+</body>
+</html>

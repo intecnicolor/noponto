@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+/*ESTILOS E PADROES*/
+/* azul: #a0edff; */
+/* verde: #38f48e; */
+/* amarelo: #f9f200; */
+/*laranja: #ff9300; */
+/*vermelhor: #ff000c; */
+/* fontes: 'Titan One', cursive; */
+
+body {margin:0;}
+
+body info.html{
+
+}
+a {text-decoration: none;}
+
+ul {list-style: none;}
+
+main {overflow: hidden;}
+
+#banner5{
+	padding: 50px 0 20px;
+	}
+
+.telaCheia #banner5{
+	background: url('../imgs/cidadefundo.png') no-repeat right bottom;
+	}
+
+/* CABECALHO E RODAPE*/
+#cabecalhoRodape {
+	background: #a0edff;
+	width: 100%;
+	}
+
+#cabecalhoRodape .container{
+	height: 60px;
+	}
+
+
+.redesSociais ul {
+	display: flex;
+	justify-content: space-around;
+	}
+
+.redesSociais li {
+	padding: 2px 3px;
+	}
+
+.redesSociais ul li img{
+	width: 40px;
+	}
+
+
+
+
+/*LOGO*/
+.LogoSimplificado p {
+	font-family: 'Titan One', cursive;
+	font-size: 25pt;
+	color: white;
+	}
+
+
+
+/*FOMULARIO*/
+
+.formGroup input{
+	width: 350px;
+	height: 20px;
+	background: #a0edff;
+	border: solid 3px white;
+	border-radius: 4px;
+	font-weight: bold;
+	color: black;
+	padding: 4px 8px 4px;
+	}
+
+.formGroup input::placeholder{ 
+	color: white;
+	font-family: 'helvetica', cursive;
+	}
+
+.botaoBusca { 
+	padding: 8px;
+	background: none;
+	border: none;
+	}
+.botaoBusca img {
+	width: 30px;
+	}
+
+
+/* ALINHAMENTO */
+.container{
+	width: 100%;
+	padding-right: 100px;
+	padding-left: 100px;
+ 	box-sizing: border-box;
+	}
+
+.central{
+	width: 80%;
+	padding: 100px;
+ 	box-sizing: border-box;
+	}
+
+.linha{
+	display: flex;
+	}
+
+.alinharVertical{
+	align-items: center;
+	}
+
+.JustificarEspacoEntre{
+	justify-content: space-between;
+	}
+
+
+
+
+
+/*SECTIONS*/
+.telaCheia{
+	background: white;
+	height: 100vh;
+	position: relative;
+	}
+
+.posicionamento {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	}
+
+.justificaComMargem {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	}
+
+.txtIlustracao {
+	display: flex;
+	justify-content: space-between;
+	}
+
+
+
+/*TEXTO*/
+#txt h1{
+	font-family: 'Titan One', cursive;
+	font-size: 250px;
+	color: #a0edff;
+	line-height: 80%;
+	padding-bottom: 5px;
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+	}
+
+.txt h2{
+	font-family: 'Titan One', cursive;
+	font-size: 130px;
+	line-height: 90%;
+	padding-bottom: 40px;
+	}
+
+.txt h2.verde{
+	color: #38f48e;
+	}
+
+.txt h2.amarelo{
+	color: #f9f200;
+	}
+
+.txt h2.laranja{
+	color: #ff9300;
+	}
+
+.txt h2.branca{
+	color: white;
+	} 
+
+.txt p{
+	font-family:'helvetica';
+	font-size: 28px;
+	width: 700px;	
+	}
+
+.txt p.branca{
+	color: white;	
+	}
+
+.txt a { 
+	font-weight: bold;
+	color: black; 
+	}
+
+.txtLista {
+	width: 1200px;
+	}
+
+.txtLista h3{
+	font-family: 'Titan One', cursive;
+	font-size: 80px;
+	line-height: 100%;
+	padding: 20px 0 20px;
+	}
+
+.txtLista p {
+	font-family:'helvetica';
+	font-size: 18px;
+	width: 900px;
+	padding-bottom: 20px;	
+	}
+
+.txt h4{
+	font-family: 'Titan One', cursive;
+	font-size: 100px;
+	color: #a0edff;
+	}
+
+.blocoCheck img {
+	padding-right: 8px;
+	width: 40px;
+	}
+
+.checkTxt{
+	padding-top: 20px;
+	}
+
+
+
+/*ILUSTRACAO*/
+.ilustracao {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	position: relative;
+
+	}
+
+.ilustracao img{
+	position: relative;
+    bottom: -4px;
+	}
+
+
+/*ANIMACOES*/
+.onibus {
+    width: 800px;
+    bottom: 26px;
+    position: absolute;
+    left: -850px;
+    animation: andaOnibus 5s ease-in-out 2s;
+	}
+
+
+.ilustracao .pontomulher{
+	width: 500px;
+	position: absolute;
+	animation: tiraPontoCom 0s ease-in-out 5s forwards;
+	}
+
+.pontosem {
+	width: 500px;
+	display: block;
+	opacity: 0;
+	position: absolute;
+	animation: colocaPontoSem 0s ease-in-out 5s forwards;
+	}
+
+.ilustracao >.impressora {
+	width: 500px;
+	}
+
+.ilustracao> .papel {
+	width: 300px;
+	position: relative;
+	left: 400px;
+	animation: imprime 4s ease 1s infinite;
+	}
+
+.ilustracao > .telefone1 {
+	width: 400px;
+	position: absolute;
+	}
+
+.ilustracao > .telefone2 {
+	width: 400px;
+	display: none;
+	position: absolute;
+	}
+
+.ilustracao > .telefone2.visivel {
+	display: block;
+	z-index: 10;
+	}
+
+
+/*ANIMACAO ONIBUS*/
+@keyframes andaOnibus {
+	from {
+		left: -850px;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes colocaPontoSem {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes tiraPontoCom {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes imprime {
+	from {
+		bottom: 100px;
+	}
+	to {
+		bottom: 200px;
+	}
+}
+
+/*SLIDER*/
+.sliderPerdido {
+	display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+	}
+
+.sliderPerdido .bolinha {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	border: 4px solid #000;
+	border-radius: 50%;
+	}
+
+.sliderPerdido .bolinha:hover {
+	cursor: pointer;
+	}
+
+.sliderPerdido .bolinha.ativa {
+	background: #38f48e;
+	}
+
+#sliderContainer > img {
+	display: none;
+	}
+
+#sliderContainer > img.visivel {
+	display: block;
+	}
+
+.sliderTextos {
+	display: none;
+	}
+
+.sliderTextos.visivel {
+	display: block;
+	}
+
+
+
+/* RODAPE LINHAS RUA*/
+.linhaRua {
+	border-top: solid 14px black;
+	align-self: flex-end;
+	padding-bottom: 40px;
+	}
+
+
+.botaoDot{
+background: url('../imgs/linhadot.png') repeat-x center;
+	}
+
+
+.botaoDot a img {
+	display: block;
+	margin: 0 auto;
+	}
+
+
+/* BOTOES*/
+
+.botoesInfo {
+	padding-top: 50px;
+	align-items: flex-end;
+	}
+
+.botoesInfo button {
+	border: solid 5px black;
+	border-radius: 4px;
+	padding: 20px;
+	margin-right: 20px;
+	background: white;
+	}
+
+.botoesInfo a button{
+	font-family: 'Titan One', cursive;
+	font-size: 12px;
+	color: black;
+	text-decoration: none;
+	}
+.botoesInfo.amarelo {
+	display: flex;
+	align-items: flex-end;
+	}
+
+.botoesInfo.amarelo a button:hover{
+	background: #f9f200;
+	}
+
+.botoesInfo.laranja {
+	display: flex;
+	align-items: flex-end;
+	}
+
+.botoesInfo.laranja button:hover{
+	background: #ff9300;
+	}
+	
+.botaoCentral{
+	position: relative;
+	top:50%;
+	left:50%;
+	}
+
+.telaCheia .setaCentro {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 100vh;
+	}
+
+.telaCheia #banner5 .cabecalhoRodape {
+	display: flex;
+	height: 100vh;
+	align-items: flex-end;
+	}
+
+.posicionamento .txtIlustracao .sliderTextos .visivel .txt{
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	}
+
+
+
+/*MEDIAS QUERY*/
+
+/*NOTEBOOKS*/
+
+@media (max-width: 1800px){
+	.txt p { font-size: 26px; }
+	.placaVerde { width: 550px; }
+	.pizza {width: 570px; }
+	}
+
+@media (max-width: 1500px){
+	#banner1 .ilustracao img { width: 470px; }
+	.onibus { width: 770px; }
+
+	#txt h1{
+	font-size: 230px;
+	line-height: 80%;
+	}
+
+	.txt p { 
+		font-size: 24px; 
+		width: 600px;
+		}
+	.placaVerde { width: 500px; }
+	.pizza {width: 520px; }
+
+	.ilustracao >.impressora {
+		width: 450px;
+		position: relative;
+		right: 200px;
+		}
+
+	.ilustracao> .papel {
+		width: 300px;
+		position: relative;
+		left: 180px;
+		animation: imprime 4s ease 1s infinite;
+		}
+
+	.ilustracao > .telefone1 {
+		width: 350px;
+		position: absolute;
+		}
+
+	.ilustracao > .telefone2 {
+		width: 350px;
+		display: none;
+		position: absolute;
+		}
+
+	.ilustraRede {
+		width: 457px;
+		}
+	}
+
+@media (max-width: 1279px) {
+	#banner1 .ilustracao img { width: 400px; }
+	.onibus { width: 660px; }
+
+	#txt h1{
+		font-size: 200px;
+		line-height: 80%;
+		}
+
+	.txt h2{ font-size: 100px; }
+
+	.txt h4 { font-size: 80px;  }
+
+	.txt p { font-size: 22px; }
+
+	.placaVerde { width: 460px; }
+	.pizza {width: 480px; }
+
+	.sliderPerdido .bolinha {
+		width: 15px;
+		height: 15px;
+		margin: 8px;
+		border: 4px solid #000;
+		border-radius: 50%;
+		}
+
+	.ilustracao >.impressora {
+		width: 400px;
+		position: relative;
+		right: 180px;
+		}
+
+	.ilustracao> .papel {
+		width: 260px;
+		position: relative;
+		left: 160px;
+		animation: imprime 4s ease 1s infinite;
+		}
+
+	.ilustracao > .telefone1 {
+		width: 330px;
+		position: absolute;
+		}
+
+	.ilustracao > .telefone2 {
+		width: 330px;
+		display: none;
+		position: absolute;
+		}
+
+	}
+
+	
+/*IPAD*/
+
+@media (max-width: 779px) {
+
+	.txtIlustracao {
+		display: block;
+		height: 100vh;
+		}
+
+	.container{
+		width: 100%;
+		padding-right: 60px;
+		padding-left: 60px;
+			}
+
+	#banner1 .ilustracao {
+	    position: absolute;
+	    top: 710px;
+	    width: 400px;	
+		}
+
+	h1 {
+	position: absolute;
+	top: 350px;
+	font-size: 200px;
+		}
+
+	.txt h1 {
+	font-size: 150px;
+	}
+
+	.txt p {
+	font-size: 22px;
+	}
+
+	#banner2 .txtIlustracao .txt{
+		position: absolute;
+		top: 200px;
+	}
+
+	.txtIlustracao .txt{
+		position: absolute;
+		top: 120px;
+	}
+
+	.placaVerde {
+	width: 400px;
+	position: absolute;
+	top: 600px;
+	right: 380px;
+	font-size: 200px;
+	}
+
+	.bolinha {
+	position: relative;
+	top: 600px;
+	right: 380px;
+
+	}
+
+
+	.ilustracao >.impressora {
+		width: 400px;
+		position: relative;
+		top: 700px;
+		right: 250px;
+		}
+
+	.ilustracao> .papel {
+		width: 260px;
+		position: relative;
+		top:600px;
+		left: 160px;
+		animation: imprime 4s ease 1s infinite;
+		}
+
+	.ilustracao > .telefone1 {
+		width: 250px;
+		position: absolute;
+		top: 700px;
+		}
+
+	.ilustracao > .telefone2 {
+		width: 250px;
+		display: none;
+		position: absolute;
+		}
+
+	.botoesInfo {
+		padding-top: 20px;
+		}
+
+	.botoesInfo button {
+		border: solid 3px black;
+		padding: 5px;
+		}
+
+	.botoesInfo a button{
+		font-family: 'Titan One', cursive;
+		font-size: 14px;
+		color: black;
+		text-decoration: none;
+		}
+	}
